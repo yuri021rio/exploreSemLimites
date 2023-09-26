@@ -1,60 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;900&family=Roboto:wght@700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Explore sem limites</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section class="hero">
+  <section id="hero">
     <div class="astronauta">
       <img src="./images/astronauta.png" alt="astronauta flutuando">
     </div>
     <div class="text_hero">
       <h1>Explore sem limites</h1>
       <p>Porque o aprendizado é contínuo</p>
-      <a href="" class="botao-rolagem">
-        <img src="./images/seta.svg" alt="">
+      <a href="#cards" class="botao-rolagem">
+        <img src="./images/seta.svg" alt="seta para baixo">
       </a>
     </div>
   </section>
   <section id="cards">
     <div class="card">
       <img src="./images/lua_dourada.png" alt="lua dourada">
-      <h3>Não pare nunca</h3>
-      <p>
-        Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca". Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.
-      </p>
+      <div class="cards-text">
+        <h3> Não pare nunca</h3>
+        <p>
+          Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca".
+          Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.
+        </p>
+      </div>
     </div>
     <div class="card">
       <img src="./images/lua_azul.png" alt="lua azul">
-      <h3>Só volta</h3>
-      <p>
-        Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. Às vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.
-      </p>
+      <div class="cards-text">
+        <h3>Só volta</h3>
+        <p>
+          Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar.
+          Às vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.
+        </p>
+      </div>
     </div>
     <div class="card">
-      <img src="./images/lua_rosa.png" alt="lua lua rosa">
-      <h3>Siga seu ritmo</h3>
-      <p>
-        Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir. Mesmo pequenos passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo final.
-      </p>
+      <img src="./images/lua_rosa.png" alt="lua rosa">
+      <div class="cards-text">
+        <h3>Siga seu ritmo</h3>
+        <p>
+          Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir. Mesmo pequenos passos nos aproximam do destino e motivam a continuidade. 
+          Não subestime o poder de cada ação rumo ao objetivo final.
+        </p>
+      </div>
     </div>
   </section>
-  <section class="forms-contato">
-    <h2>Entre em contato</h2>
-    <fieldset>
-      <div class="input">
-        <input type="text" id="name" placeholder="Seu nome"> 
-      </div>
-      <div class="input-2">
-        <input type="text" id="email" placeholder="E-mail">
-      </div>
-      <div class="input-3">
-        <textarea name="" id="mensagem" placeholder="Digite sua mensagem aqui..."></textarea>
-      </div>
-    </fieldset>
-    <button>Enviar Mensagem</button>
+  
+  <section id="forms-contato">
+    <form>
+      <h2>Entre em contato</h2>
+      <fieldset>
+        <div class="input-wrapper">
+          <input type="text" id="name" placeholder="Seu nome"> 
+        </div>
+        <div class="input-wrapper">
+          <input type="text" id="email" placeholder="E-mail">
+        </div>
+        <div class="input-wrapper">
+          <textarea placeholder="Digite sua mensagem aqui..."></textarea>
+        </div>
+      </fieldset>
+
+      <button class="botão" type="submit">Enviar mensagem</button>
+  </form>
     <footer>
       <p>&copy; 2023 - Rocketseat Explorer</p>
     </footer>
